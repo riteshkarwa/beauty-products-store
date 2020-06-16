@@ -7,7 +7,6 @@ import ProductList from "./components/ProductList";
 import Details from "./components/Details";
 import Cart from "./components/Cart";
 import Default from "./components/Default";
-import Product from "./components/Product";
 
 function App() {
   return (
