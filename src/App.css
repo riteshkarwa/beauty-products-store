@@ -41,3 +41,10 @@ body {
   font-size: 1.2rem;
   color: var(--mainYellow);
 }
+
+.footer {
+  background: #629632;
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
