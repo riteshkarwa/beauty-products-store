@@ -56,7 +56,15 @@ class Navbar extends Component {
 export default Navbar;
 
 const NavWrapper = styled.nav`
-  background: #629632;
+  background: rgb(3, 219, 13);
+  background: linear-gradient(
+    90deg,
+    rgba(3, 219, 13, 1) 0%,
+    rgba(4, 211, 66, 1) 53%,
+    rgba(6, 223, 166, 1) 100%,
+    rgba(6, 223, 199, 1) 100%,
+    rgba(0, 255, 235, 1) 100%
+  );
   .nav-link {
     color: var(--mainWhite) !important;
     font-size: 1.3rem;

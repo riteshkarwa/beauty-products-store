@@ -43,8 +43,23 @@ body {
 }
 
 .footer {
-  background: #629632;
-  color: white;
+  background: rgb(3, 219, 13);
+  background: linear-gradient(
+    90deg,
+    rgba(3, 219, 13, 1) 0%,
+    rgba(4, 211, 66, 1) 53%,
+    rgba(6, 223, 166, 1) 100%,
+    rgba(6, 223, 199, 1) 100%,
+    rgba(0, 255, 235, 1) 100%
+  );
+  color: var(--mainWhite);
+  font-size: 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 350px) {
+  .footer {
+    font-size: 1rem !important;
+  }
 }
