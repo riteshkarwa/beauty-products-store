@@ -15,9 +15,12 @@ class ProductProvider extends Component {
     cartTotal: 0,
   };
   componentDidMount() {
-    fetch("http://ip-api.com/json?fields=status,country,currency")
+    fetch(
+      "http://api.ipstack.com/check?access_key=86bfcbe68e1666bf8ba5c3ecdfe12062"
+    )
       .then((response) => response.json())
       .then((res) => {
+        console.log(res);
         if (res.currency === "USD") {
           this.setProducts();
         } else {
