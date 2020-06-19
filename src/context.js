@@ -16,12 +16,12 @@ class ProductProvider extends Component {
   };
   componentDidMount() {
     fetch(
-      "http://api.ipstack.com/check?access_key=86bfcbe68e1666bf8ba5c3ecdfe12062"
+      "https://api.ipgeolocation.io/ipgeo?apiKey=828a1c79a4334965b3013c94267d66d6"
     )
       .then((response) => response.json())
       .then((res) => {
-        console.log(res);
-        if (res.currency === "USD") {
+        console.log(res.currency.code);
+        if (res.currency.code === "USD") {
           this.setProducts();
         } else {
           this.setProductsInd();
