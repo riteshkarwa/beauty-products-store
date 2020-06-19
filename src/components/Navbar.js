@@ -16,6 +16,7 @@ class Navbar extends Component {
           <img src={logo} alt="store" className="navbar-brand" />
         </Link>
         <button
+          style={{ border: "0.1rem solid white" }}
           className="navbar-toggler"
           type="button"
           data-toggle="collapse"

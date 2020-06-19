@@ -49,7 +49,7 @@ class Product extends Component {
           <div className="card-footer d-flex justify-content-between">
             <p className="align-self-center mb-0">{title}</p>
             <h5 className="text-blue mb-0">
-              <span className="mr-1">{this.checkCurrency(currency)}</span>
+              <span className="mx-2">{this.checkCurrency(currency)}</span>
               {price}
             </h5>
           </div>

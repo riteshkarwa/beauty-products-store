@@ -20,7 +20,6 @@ class ProductProvider extends Component {
     )
       .then((response) => response.json())
       .then((res) => {
-        console.log(res.currency.code);
         if (res.currency.code === "USD") {
           this.setProducts();
         } else {
