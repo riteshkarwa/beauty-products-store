@@ -2,13 +2,20 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import { faRupeeSign } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PropTypes from "prop-types";
 import { ProductConsumer } from "../context";
 
 class Product extends Component {
+  checkCurrency = (curr) => {
+    if (curr === "INR") {
+      return <FontAwesomeIcon icon={faRupeeSign} />;
+    }
+    return "$";
+  };
   render() {
-    const { id, title, img, price, inCart } = this.props.product;
+    const { id, title, img, price, inCart, currency } = this.props.product;
     return (
       <ProductWrapper className="col-9 mx-auto col-md-6 col-lg-3 my-3">
         <div className="card">
@@ -42,7 +49,7 @@ class Product extends Component {
           <div className="card-footer d-flex justify-content-between">
             <p className="align-self-center mb-0">{title}</p>
             <h5 className="text-blue mb-0">
-              <span className="mr-1">$</span>
+              <span className="mr-1">{this.checkCurrency(currency)}</span>
               {price}
             </h5>
           </div>

@@ -3,6 +3,7 @@ export const storeProducts = [
     id: 1,
     title: "Google Pixel - Black",
     img: "img/product-1.png",
+    currency: "USD",
     price: 10,
     company: "GOOGLE",
     info:
@@ -15,6 +16,7 @@ export const storeProducts = [
     id: 2,
     title: "Samsung S7",
     img: "img/product-2.png",
+    currency: "USD",
     price: 16,
     company: "SAMSUNG",
     info:
@@ -27,6 +29,7 @@ export const storeProducts = [
     id: 3,
     title: "HTC 10 - Black",
     img: "img/product-3.png",
+    currency: "USD",
     price: 8,
     company: "htc",
     info:
@@ -39,6 +42,7 @@ export const storeProducts = [
     id: 4,
     title: "HTC 10 - White",
     img: "img/product-4.png",
+    currency: "USD",
     price: 18,
     company: "htc",
     info:
@@ -51,6 +55,7 @@ export const storeProducts = [
     id: 5,
     title: "HTC Desire 626s",
     img: "img/product-5.png",
+    currency: "USD",
     price: 24,
     company: "htc",
     info:
@@ -63,6 +68,7 @@ export const storeProducts = [
     id: 6,
     title: "Vintage Iphone",
     img: "img/product-6.png",
+    currency: "USD",
     price: 17,
     company: "apple",
     info:
@@ -75,6 +81,7 @@ export const storeProducts = [
     id: 7,
     title: "Iphone 7",
     img: "img/product-7.png",
+    currency: "USD",
     price: 30,
     company: "apple",
     info:
@@ -87,6 +94,7 @@ export const storeProducts = [
     id: 8,
     title: "Smashed Iphone",
     img: "img/product-8.png",
+    currency: "USD",
     price: 2,
     company: "apple",
     info:
@@ -103,6 +111,7 @@ export const storeProductsInd = [
     title: "Google Pixel - Black",
     img: "img/product-1.png",
     price: 750,
+    currency: "INR",
     company: "GOOGLE",
     info:
       "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
@@ -114,6 +123,7 @@ export const storeProductsInd = [
     id: 2,
     title: "Samsung S7",
     img: "img/product-2.png",
+    currency: "INR",
     price: 1200,
     company: "SAMSUNG",
     info:
@@ -126,6 +136,7 @@ export const storeProductsInd = [
     id: 3,
     title: "HTC 10 - Black",
     img: "img/product-3.png",
+    currency: "INR",
     price: 600,
     company: "htc",
     info:
@@ -138,6 +149,7 @@ export const storeProductsInd = [
     id: 4,
     title: "HTC 10 - White",
     img: "img/product-4.png",
+    currency: "INR",
     price: 1350,
     company: "htc",
     info:
@@ -150,6 +162,7 @@ export const storeProductsInd = [
     id: 5,
     title: "HTC Desire 626s",
     img: "img/product-5.png",
+    currency: "INR",
     price: 1800,
     company: "htc",
     info:
@@ -162,7 +175,8 @@ export const storeProductsInd = [
     id: 6,
     title: "Vintage Iphone",
     img: "img/product-6.png",
-    priceInd: 1275,
+    price: 1275,
+    currency: "INR",
     company: "apple",
     info:
       "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
@@ -174,6 +188,7 @@ export const storeProductsInd = [
     id: 7,
     title: "Iphone 7",
     img: "img/product-7.png",
+    currency: "INR",
     price: 2250,
     company: "apple",
     info:
@@ -186,6 +201,7 @@ export const storeProductsInd = [
     id: 8,
     title: "Smashed Iphone",
     img: "img/product-8.png",
+    currency: "INR",
     price: 150,
     company: "apple",
     info:
