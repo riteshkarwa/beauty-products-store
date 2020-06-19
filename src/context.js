@@ -21,7 +21,7 @@ class ProductProvider extends Component {
         if (res.currency === "USD") {
           this.setProducts();
         } else {
-          this.storeProductsInd();
+          this.setProductsInd();
         }
       });
   }
