@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 class Footer extends Component {
   render() {
     return (
-      <div className="conatainer">
+      <div className="conatainer pt-5">
         <div className="row">
           <div className="footer fixed-bottom text-center">
             © 2020 Copyright:
