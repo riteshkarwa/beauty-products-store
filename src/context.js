@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { storeProducts, detailProduct } from "./data";
+import { storeProducts, detailProduct, storeProductsInd } from "./data";
 
 const ProductContext = React.createContext();
 
@@ -15,11 +15,29 @@ class ProductProvider extends Component {
     cartTotal: 0,
   };
   componentDidMount() {
-    this.setProducts();
+    fetch("http://ip-api.com/json?fields=status,country,currency")
+      .then((response) => response.json())
+      .then((res) => {
+        if (res.currency === "USD") {
+          this.setProducts();
+        } else {
+          this.storeProductsInd();
+        }
+      });
   }
   setProducts = () => {
     let tempProducts = [];
     storeProducts.forEach((item) => {
+      const singleITem = { ...item };
+      tempProducts = [...tempProducts, singleITem];
+    });
+    this.setState(() => {
+      return { products: tempProducts };
+    });
+  };
+  setProductsInd = () => {
+    let tempProducts = [];
+    storeProductsInd.forEach((item) => {
       const singleITem = { ...item };
       tempProducts = [...tempProducts, singleITem];
     });
